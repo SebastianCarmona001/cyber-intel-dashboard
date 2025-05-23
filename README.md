@@ -61,6 +61,7 @@ Todo se ejecuta localmente sin necesidad de despliegue.
 │   └── dashboardCharts.js # Script para generar los gráficos Pareto
 ├── README.md # Este archivo
 └── requirements.txt # dependencias del entorno virtual
+└── .gitignore # Elementos a ignorar
 
 ## 🚀 Cómo ejecutar localmente
 1. Clonar el repositorio
