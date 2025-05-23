@@ -64,22 +64,22 @@ Todo se ejecuta localmente sin necesidad de despliegue.
 - └── .gitignore # Elementos a ignorar
 
 ## 🚀 Cómo ejecutar localmente
-1. Clonar el repositorio
-    bash
-        git clone https://github.com/tu_usuario/cyber-intel-dashboard.git
-        cd cyber-intel-dashboard
-2. Crear entorno virtual (opcional pero recomendado)
-    bash
-        python -m venv venv
-        source venv/bin/activate  # Linux/Mac
-        venv\Scripts\activate     # Windows
-3. Instalar dependencias
-    bash
-        pip install flask requests
-4. Ejecutar la app
-    bash
-        python app.py
-        Abre tu navegador en http://127.0.0.1:5000
+- 1. Clonar el repositorio
+  -    bash
+    -        git clone https://github.com/tu_usuario/cyber-intel-dashboard.git
+    -        cd cyber-intel-dashboard
+- 2. Crear entorno virtual (opcional pero recomendado)
+  -    bash
+    -        python -m venv venv
+    -        source venv/bin/activate  # Linux/Mac
+    -        venv\Scripts\activate     # Windows
+- 3. Instalar dependencias
+  -    bash
+    -        pip install flask requests
+- 4. Ejecutar la app
+  -    bash
+    -        python app.py
+    -        Abre tu navegador en http://127.0.0.1:5000
 
 ## 📊 Funcionalidades
 ### Página de Víctimas (/recentVictims)
