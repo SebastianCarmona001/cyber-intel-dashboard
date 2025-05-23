@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Dashboard LUMU{% endblock %}</title>
+    <!-- Establezco una lista de estilos donde pongo cosas como la fuente Monserrat de LUMU, 
+     y propiedades de tamaños y redondeos para mejorar la estetica del dashboard -->
+    <style>
+        body {
+            font-family: "Monserrat", "Segoe UI", "Verdana", sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #777777;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        a {
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2{
+            font-family: "Monserrat", "Segoe UI", "Verdana", sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #f98e00;
+        }
+        h3{
+            font-family: "Monserrat", "Segoe UI", "Verdana", sans-serif;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #f98e00;
+        }
+        header {
+            background-color: #767676;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        nav {
+            background-color: #f98e00;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+
+        .filter-form-horizontal {
+            max-width: 100%;
+            margin: 0 auto;
+            font-family: "Montserrat", "Segoe UI", sans-serif;
+        }
+
+        .form-row-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            align-items: flex-end;
+        }
+
+        .form-field {
+            flex: 1;
+            min-width: 160px;
+        }
+
+        .form-field label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .form-field select,
+        .form-field input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .button-field button {
+            width: 100%;
+            padding: 11px;
+            background-color: #f98e00;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button-field button:hover {
+            background-color: #e37b00;
+        }
+        /* Utilizo Media Queries para tener un diseño responsive */
+        @media (max-width: 1000px) {
+            .form-row-horizontal {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Creo un baner con el logo de Lumu y el nombre de la pagina -->
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <h1>Cyber Intelligence Dashboard</h1>
+    </header>
+    <!-- Creo botones para navegar entre paginas -->
+    <nav>
+        <a href="/recentVictims">Recent victims</a>
+        <a href="/dashboard">Dashboard</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
