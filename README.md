@@ -46,22 +46,22 @@ Todo se ejecuta localmente sin necesidad de despliegue.
 
 ## 📂 Estructura del Proyecto
 .
-├── app.py # Archivo principal Flask
-├── victims.py # Funciones para consultar y procesar víctimas
-├── dashboard.py # Funciones para agrupar datos del dashboard
-├── utils.py # Funciones auxiliares
-├── templates/
-│ ├── base.html # Plantilla base con menú y estilos
-│ ├── victims.html # Página de tabla de víctimas con filtros
-│ └── dashboard.html # Página con visualizaciones
-├── static/
-| └── images/
-|   └── logo.png # Logo usado en el banner
-│ └── js/
-│   └── dashboardCharts.js # Script para generar los gráficos Pareto
-├── README.md # Este archivo
-└── requirements.txt # dependencias del entorno virtual
-└── .gitignore # Elementos a ignorar
+- ├── app.py # Archivo principal Flask
+- ├── victims.py # Funciones para consultar y procesar víctimas
+- ├── dashboard.py # Funciones para agrupar datos del dashboard
+- ├── utils.py # Funciones auxiliares
+- ├── templates/  
+  - │ ├── base.html # Plantilla base con menú y estilos
+  - │ ├── victims.html # Página de tabla de víctimas con filtros
+  - │ └── dashboard.html # Página con visualizaciones
+- ├── static/
+  - | └── images/
+    - |   └── logo.png # Logo usado en el banner
+  - │ └── js/
+    - │   └── dashboardCharts.js # Script para generar los gráficos Pareto
+- ├── README.md # Este archivo
+- └── requirements.txt # dependencias del entorno virtual
+- └── .gitignore # Elementos a ignorar
 
 ## 🚀 Cómo ejecutar localmente
 1. Clonar el repositorio
