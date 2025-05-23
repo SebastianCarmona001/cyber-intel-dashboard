@@ -95,6 +95,11 @@ Todo se ejecuta localmente sin necesidad de despliegue.
 - Pareto de ataques por actividad
 
 ## 🧪 Capturas
+![image](https://github.com/user-attachments/assets/5aa7e4bc-a08b-460b-8440-ec6e86ae4b73)
+![image](https://github.com/user-attachments/assets/b52edb62-f8c2-435c-a4a2-e025d69b34f7)
+![image](https://github.com/user-attachments/assets/0d72fd7e-0e63-42d1-b43b-7e3c4989dd04)
+
+
 
 ## 📎 Notas
 - El proyecto está diseñado para funcionar localmente, no requiere despliegue.
